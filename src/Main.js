@@ -53,7 +53,7 @@ import AboutPage from "./pages/AboutPage";
 import Homepage from "./pages/Homepage";
 import MaPage from "./pages/MaPage";
 import CompanyInformation1 from "./components/CompanyInformation1";
-import ReservationList from "./components/ReservationList";
+import ReservationList from "./components/LgReservationList";
 import BoardManagement from "./components/BoardManagement";
 
 function Main() {

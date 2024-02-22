@@ -141,19 +141,10 @@ export const getLastId = async () => {
 // 회원가입 박진현
 const addDatas = async (collectionName, data) => {
   try {
-    const memberData = localStorage.getItem("member");
-    const member = JSON.parse(memberData);
-    const userData = { memberNickName: member?.memberNickName };
-
-    const modifiedData = {
-      ...data,
-      userData: userData,
-    };
-    const docRef = await addDoc(collection(db, collectionName), modifiedData);
-
-    // console.log("Document written with ID: ", docRef.id);
+    const docRef = await addDoc(collection(db, collectionName), data);
+    console.log("Document written with ID: ", docRef.id);
   } catch (error) {
-    // console.error("Error adding document: ", error);
+    console.error("Error adding document: ", error);
     throw error;
   }
   Object.keys(data).forEach((field) => {
@@ -805,6 +796,68 @@ async function getDocumentsDescending(collectionName, fieldName, limitNumber) {
 
   return documents;
 }
+// 업체예약하기 이건 변수명바꿈
+async function LgGetReservation(memberId, reservationNumber) {
+  try {
+    const q = query(
+      collection(db, "member", memberId, "Reservation"),
+      where("reservationNumber", "==", reservationNumber)
+    );
+
+    const querySnapshot = await getDocs(q);
+
+    let reservationData = null;
+
+    querySnapshot.forEach((doc) => {
+      reservationData = doc.data();
+    });
+
+    return reservationData;
+  } catch (error) {
+    console.error("Error getting reservation: ", error);
+  }
+}
+//이건 업체예약 리스트
+async function LgGetReservationsByMemberId(db, memberId) {
+  const memberCol = collection(db, "member");
+  const querySnapshot = await getDocs(
+    query(memberCol, where("memberId", "==", memberId))
+  );
+  const memberDocs = querySnapshot.docs;
+  const reservationsList = [];
+
+  for (const memberDoc of memberDocs) {
+    if (memberDoc && memberDoc.exists()) {
+      const reservationCol = collection(memberDoc.ref, "Reservation");
+      const reservationsSnapshot = await getDocs(reservationCol);
+      const reservations = reservationsSnapshot.docs.map((doc) => doc.data());
+      reservationsList.push(...reservations);
+    }
+  }
+
+  return reservationsList;
+}
+//업체 예약내역 나중에 변수명 바까야할수도
+async function LgGetReservationByNumber(memberId, reservationNumber) {
+  console.log(reservationNumber);
+  const reservationCollection = collection(
+    db,
+    "member",
+    memberId,
+    "Reservation"
+  );
+  const querySnapshot = await getDocs(reservationCollection);
+
+  for (const doc of querySnapshot.docs) {
+    if (doc.data().reservationNumber === reservationNumber) {
+      console.log("Document data:", doc.data());
+      return doc.data();
+    }
+  }
+
+  console.log("No such document!");
+  return null;
+}
 
 export {
   db,
@@ -850,4 +903,7 @@ export {
   fetchReservation,
   getReservation,
   getDocumentsDescending,
+  LgGetReservationsByMemberId,
+  LgGetReservation,
+  LgGetReservationByNumber,
 };

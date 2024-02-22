@@ -70,6 +70,7 @@
 
 .closeIcon {
   width: 30px;
+  filter: brightness(-10%);
 }
 
 .form {
@@ -100,7 +101,7 @@
   border: 1px solid #d9d9d9;
 }
 
-label {
+.label {
   width: 150px;
 }
 
