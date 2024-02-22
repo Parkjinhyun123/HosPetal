@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HosPetal/static/css/main.ba7c7d82.css",
-    "main.js": "/HosPetal/static/js/main.874d1b52.js",
+    "main.js": "/HosPetal/static/js/main.1018213f.js",
     "static/media/NotoSansKR-VariableFont_wght.ttf": "/HosPetal/static/media/NotoSansKR-VariableFont_wght.33752a94ca5252213de8.ttf",
     "static/media/꿀팁_02.png": "/HosPetal/static/media/꿀팁_02.3798ebb88f2d38657a2a.png",
     "static/media/ESFP.png": "/HosPetal/static/media/ESFP.5f3cd54097ca7b04897e.png",
@@ -31,6 +31,7 @@
     "static/media/patten.png": "/HosPetal/static/media/patten.e56d773b930b6d5cd8c7.png",
     "static/media/ISFJ2.png": "/HosPetal/static/media/ISFJ2.de25630aaea727d4d5f9.png",
     "static/media/ISFP2.png": "/HosPetal/static/media/ISFP2.9c87d3347910c2be08f4.png",
+    "static/media/mainimage2.png": "/HosPetal/static/media/mainimage2.aceafbf084a9b6f28cb4.png",
     "static/media/ISTJ2.png": "/HosPetal/static/media/ISTJ2.e9b4848f8195451b5f58.png",
     "static/media/ENFJ.png": "/HosPetal/static/media/ENFJ.98a2f2be256d6f6f80ac.png",
     "static/media/404페이지_02.jpg": "/HosPetal/static/media/404페이지_02.38722c17744cd9a2dcbb.jpg",
@@ -174,10 +175,10 @@
     "static/media/search_icon.svg": "/HosPetal/static/media/search_icon.2c0ab592ade7a45f66f2b84823d1e5dc.svg",
     "static/media/icon-reply.svg": "/HosPetal/static/media/icon-reply.79b9e4b4dc1621d673dce41a03a16866.svg",
     "main.ba7c7d82.css.map": "/HosPetal/static/css/main.ba7c7d82.css.map",
-    "main.874d1b52.js.map": "/HosPetal/static/js/main.874d1b52.js.map"
+    "main.1018213f.js.map": "/HosPetal/static/js/main.1018213f.js.map"
   },
   "entrypoints": [
     "static/css/main.ba7c7d82.css",
-    "static/js/main.874d1b52.js"
+    "static/js/main.1018213f.js"
   ]
 }
