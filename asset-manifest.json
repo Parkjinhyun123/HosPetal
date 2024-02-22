@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HosPetal/static/css/main.ba7c7d82.css",
-    "main.js": "/HosPetal/static/js/main.1018213f.js",
+    "main.js": "/HosPetal/static/js/main.3ab4d215.js",
     "static/media/NotoSansKR-VariableFont_wght.ttf": "/HosPetal/static/media/NotoSansKR-VariableFont_wght.33752a94ca5252213de8.ttf",
     "static/media/꿀팁_02.png": "/HosPetal/static/media/꿀팁_02.3798ebb88f2d38657a2a.png",
     "static/media/ESFP.png": "/HosPetal/static/media/ESFP.5f3cd54097ca7b04897e.png",
@@ -175,10 +175,10 @@
     "static/media/search_icon.svg": "/HosPetal/static/media/search_icon.2c0ab592ade7a45f66f2b84823d1e5dc.svg",
     "static/media/icon-reply.svg": "/HosPetal/static/media/icon-reply.79b9e4b4dc1621d673dce41a03a16866.svg",
     "main.ba7c7d82.css.map": "/HosPetal/static/css/main.ba7c7d82.css.map",
-    "main.1018213f.js.map": "/HosPetal/static/js/main.1018213f.js.map"
+    "main.3ab4d215.js.map": "/HosPetal/static/js/main.3ab4d215.js.map"
   },
   "entrypoints": [
     "static/css/main.ba7c7d82.css",
-    "static/js/main.1018213f.js"
+    "static/js/main.3ab4d215.js"
   ]
 }
