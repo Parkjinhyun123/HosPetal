@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HosPetal/static/css/main.ba7c7d82.css",
-    "main.js": "/HosPetal/static/js/main.da8fef2a.js",
+    "main.js": "/HosPetal/static/js/main.cc470432.js",
     "static/media/NotoSansKR-VariableFont_wght.ttf": "/HosPetal/static/media/NotoSansKR-VariableFont_wght.33752a94ca5252213de8.ttf",
     "static/media/꿀팁_02.png": "/HosPetal/static/media/꿀팁_02.3798ebb88f2d38657a2a.png",
     "static/media/ESFP.png": "/HosPetal/static/media/ESFP.5f3cd54097ca7b04897e.png",
@@ -178,10 +178,10 @@
     "static/media/kakao logo_r__FFC26F.svg": "/HosPetal/static/media/kakao logo_r__FFC26F.83dfcb5f974d69a44b0573c6222f6d3b.svg",
     "static/media/icon-reply.svg": "/HosPetal/static/media/icon-reply.79b9e4b4dc1621d673dce41a03a16866.svg",
     "main.ba7c7d82.css.map": "/HosPetal/static/css/main.ba7c7d82.css.map",
-    "main.da8fef2a.js.map": "/HosPetal/static/js/main.da8fef2a.js.map"
+    "main.cc470432.js.map": "/HosPetal/static/js/main.cc470432.js.map"
   },
   "entrypoints": [
     "static/css/main.ba7c7d82.css",
-    "static/js/main.da8fef2a.js"
+    "static/js/main.cc470432.js"
   ]
 }
